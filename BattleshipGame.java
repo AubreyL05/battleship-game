@@ -41,6 +41,7 @@ public class BattleshipGame {
             int humanRow = humanMove[0];
             int humanCol = humanMove[1];
 
+            // Validate the move
             if (cpuBoard.hasShip(humanRow, humanCol)) {
                 cpuBoard.setPosition(humanRow, humanCol, hit);
                 System.out.println("Hit!");

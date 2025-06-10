@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Board {
+    // Define board properties
     private char[][] grid;
     private int size;
     private char water;
@@ -9,6 +10,8 @@ public class Board {
     private char hit;
     private char miss;
 
+    // Constructor to initialize the board with specified parameters
+    // and place ships randomly
     public Board(int size, char waterChar, char shipChar, char hitChar, char missChar, int numShips) {
         this.size = size;
         this.water = waterChar;
@@ -23,7 +26,7 @@ public class Board {
 
         placeShips(numShips);
     }
-
+    
     public char getPosition(int row, int col) {
         return grid[row][col];
     }
@@ -77,6 +80,7 @@ public class Board {
         }
     }
 
+    // Check if all ships on the board are sunk
     public boolean areAllShipsSunk() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {

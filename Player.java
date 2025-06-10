@@ -30,6 +30,13 @@ class HumanPlayer extends Player {
         this.scanner = scanner;
     }
 
+    /**
+     * Prompts the human player to input their target coordinates on the opponent's board.
+     * Validates the input to ensure it is within bounds and not already targeted.
+     * 
+     * @param opponentBoard The board of the opponent where the player will target.
+     * @return An array containing the row and column indices of the targeted position.
+     */
     @Override
     public int[] makeMOve(Board opponentBoard) {
         int row = -1;
