@@ -3,7 +3,7 @@
 ---
 ## Project Overview
 
-This is a classic **Battleship game** built in **Java**, designed for a console environment. Play against a CPU opponent, put your tactical skills to the test, and see fundamental game logic and **Object-Oriented Programming (OOP)** principles in action.
+This is a classic **Battleship game** built in **Java**, designed for a console environment. Play against a CPU opponent and see fundamental game logic and **Object-Oriented Programming (OOP)** principles.
 
 ---
 ## Features
@@ -13,7 +13,6 @@ This is a classic **Battleship game** built in **Java**, designed for a console 
 * **Random Ship Placement**: Ships are randomly positioned on both player and CPU boards at the start of each game, ensuring a fresh experience every time.
 * **Hit/Miss Tracking**: Clearly see your hits (`X`) and misses (`O`) on the opponent's board.
 * **Win/Loss Condition**: The game ends when all of one player's ships are sunk.
-* **Clear Console Output**: Enjoy a user-friendly display of game boards and turn information.
 
 ---
 ## How to Play
@@ -24,7 +23,7 @@ This is a classic **Battleship game** built in **Java**, designed for a console 
     * If you **hit** a ship, the spot will be marked `X`.
     * If you **miss**, the spot will be marked `O`.
 5.  **CPU's Turn**: The CPU will then make a random move, and the result will be shown.
-6.  **Victory/Defeat**: The game continues in turns until all ships on either your board or the CPU's board are sunk.
+6.  **Win Condition**: The game continues in turns until all ships on either your board or the CPU's board are sunk.
 
 ---
 ## How to Run the Code
@@ -79,13 +78,3 @@ This project is structured to showcase key **OOP concepts**:
     * `HumanPlayer` and `CpuPlayer` extend the `Player` abstract class, inheriting common properties and behaviors, and providing their unique implementations of the `makeMove` method.
 * **Polymorphism**:
     * The `BattleshipGame` class interacts with `Player` objects polymorphically (e.g., `currentPlayer.makeMove()`). The same method call behaves differently depending on whether `currentPlayer` is a `HumanPlayer` or a `CpuPlayer`.
-
----
-## Future Enhancements (Ideas for further development)
-
-* **Graphical User Interface (GUI)**: Implement a GUI using JavaFX or Swing for a more interactive visual experience.
-* **Different Ship Sizes**: Allow for ships of varying lengths (e.g., destroyer, cruiser, battleship).
-* **More Complex AI**: Develop a more sophisticated CPU opponent that can strategize (e.g., target adjacent squares after a hit).
-* **Player Input Validation**: Add more robust input validation (e.g., checking for specific command keywords).
-* **Multiple Rounds**: Allow players to play multiple rounds.
-* **Two-Player Mode**: Implement a mode for two human players.
